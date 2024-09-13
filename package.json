@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yoanmarchal/electro-autoupdate.git"
+    "url": "git+https://github.com/yoanmarchal/electron-starter.git"
   },
   "author": "yoan marchal",
   "license": "ISC",
@@ -29,6 +29,7 @@
     "env-cmd": "^10.1.0"
   },
   "dependencies": {
+    "electron-log": "^5.2.0",
     "electron-squirrel-startup": "^1.0.1",
     "update-electron-app": "^3.0.0"
   }
