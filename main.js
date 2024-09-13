@@ -1,5 +1,8 @@
 const { app, BrowserWindow, ipcMain, nativeTheme } = require('electron')
 const path = require('node:path')
+const { updateElectronApp } = require('update-electron-app');
+updateElectronApp(); // additional configuration options available
+if (require('electron-squirrel-startup')) app.quit();
 
 const createWindow = () => {
   const win = new BrowserWindow({
