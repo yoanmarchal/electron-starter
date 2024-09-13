@@ -1,17 +1,17 @@
 {
   "name": "electro-autoupdate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "publish": "env-cmd electron-forge publish"
   },
   "repository": {
     "type": "git",
-     "url": "git+https://github.com/yoanmarchal/electro-autoupdate.git"
-   },
+    "url": "git+https://github.com/yoanmarchal/electro-autoupdate.git"
+  },
   "author": "yoan marchal",
   "license": "ISC",
   "description": "electron starter",
@@ -25,7 +25,8 @@
     "@electron-forge/plugin-fuses": "^7.4.0",
     "@electron-forge/publisher-github": "^7.4.0",
     "@electron/fuses": "^1.8.0",
-    "electron": "^32.1.0"
+    "electron": "^32.1.0",
+    "env-cmd": "^10.1.0"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1",
