@@ -1,16 +1,19 @@
 const { app, BrowserWindow, ipcMain, nativeTheme } = require('electron')
 const path = require('node:path')
+
+if (require('electron-squirrel-startup')) app.quit();
+
 const { updateElectronApp, UpdateSourceType } = require('update-electron-app')
 updateElectronApp({
   updateSource: {
     type: UpdateSourceType.ElectronPublicUpdateService,
-    repo: 'yoanmarchal/electron-starter.git',
+    repo: 'yoanmarchal/electron-starter',
     host: 'https://github.com'
   },
   updateInterval: '10 minutes',
   logger: require('electron-log')
 }); // additional configuration options available
-if (require('electron-squirrel-startup')) app.quit();
+
 
 const createWindow = () => {
   const win = new BrowserWindow({
