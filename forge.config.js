@@ -14,7 +14,7 @@ module.exports = {
           owner: 'yoanmarchal',
           name: 'electron-starter'
         },
-        prerelease: false,
+        prerelease: true,
         draft: true
       }
     }
